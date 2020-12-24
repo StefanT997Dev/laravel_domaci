@@ -17,5 +17,7 @@ class PostBlogPost extends Controller
         $post->text=$req->opis;
         $post->trainer_id=$req->trainers;
         $post->save();
+
+        return redirect()->back();
     }
 }

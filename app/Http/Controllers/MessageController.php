@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 use App\Http\Requests;
 
+use App\Message;
+
 class MessageController extends Controller
 {
     /**
@@ -93,6 +95,9 @@ class MessageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $message=Message::find($id);
+        $message->delete();
+        
+        return redirect()->back();
     }
 }

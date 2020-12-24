@@ -35,6 +35,8 @@ Route::post('submit','PostBlogPost@save');
 
 Route::post('/submitMessage','PostMessageController@save');
 
+Route::resource('/deleteMessage', 'MessageController@destroy');
+
 Route::post('/admin/submitTrainerMessage','PostMessageController@saveTrainer');
 
 Route::get('/admin/login','Auth\TrainerLoginController@showLoginForm')->name('admin.login');

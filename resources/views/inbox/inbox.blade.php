@@ -20,6 +20,7 @@
                 <h3>Message</h3>
                 <input class="form-control" name="poruka" type="text" placeholder="Type a message">
                 <button class="btn btn-primary">Send</button>
+                <a href="deleteMessage" class="btn btn-danger">Delete</a>
             </form>
             @endforeach
         @endif
