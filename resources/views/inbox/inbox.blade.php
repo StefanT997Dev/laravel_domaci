@@ -14,7 +14,8 @@
 
                 <h3>Title</h3>
                 <input class="form-control" name="title" type="text" placeholder="Subject">
-                
+                <p>{{$message->id}}</p>
+
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <h3>Message</h3>

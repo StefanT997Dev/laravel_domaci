@@ -26,7 +26,7 @@ class MessageController extends Controller
     public function index()
     {
         $messages=DB::table('messages')
-        ->select('subject','message')
+        ->select('subject','message','id')
         ->where('trainer_id', '0')
         ->get();
         return view('inbox.inbox',compact('messages'));
