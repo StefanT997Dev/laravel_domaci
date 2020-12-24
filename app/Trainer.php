@@ -14,7 +14,7 @@ class Trainer extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'imePrezime', 'email', 'password',
     ];
 
     /**

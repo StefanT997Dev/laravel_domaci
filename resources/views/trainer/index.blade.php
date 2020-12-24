@@ -15,7 +15,7 @@
         <a>Twitter</a>
         <a>LinkedIn</a>
     </div>
-    <button>Hire Me</button>
+    <a href="editTrainer/1" class="btn btn-primary trenerDugme">Hire Me</a>
     <footer>
         <div class="likes">
         <p><i class='fa fa-heart'></i></p>

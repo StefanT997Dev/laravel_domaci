@@ -14,14 +14,14 @@
 
                 <h3>Title</h3>
                 <input class="form-control" name="title" type="text" placeholder="Subject">
-                <p>{{$message->id}}</p>
+                <input type="hidden" name="id" value="{{$message->id}}">
 
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <h3>Message</h3>
                 <input class="form-control" name="poruka" type="text" placeholder="Type a message">
                 <button class="btn btn-primary">Send</button>
-                <a href="deleteMessage" class="btn btn-danger">Delete</a>
+                <a href="deleteMessage/{{$message->id}}" class="btn btn-danger">Delete</a>
             </form>
             @endforeach
         @endif

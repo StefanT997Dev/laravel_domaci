@@ -24,10 +24,6 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function plans(){
-        return $this->belongsToMany('App\Plan');
-    }
-
     public function trainer(){
         return $this->belongsTo('App\Trainer');
     }

@@ -31,6 +31,8 @@ Route::resource('/blog','BlogController');
 
 Route::resource('/message','MessageController');
 
+Route::resource('/editTrainer','TrainerEditController@edit');
+
 Route::post('submit','PostBlogPost@save');
 
 Route::post('/submitMessage','PostMessageController@save');
