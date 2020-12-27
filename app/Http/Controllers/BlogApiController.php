@@ -40,4 +40,9 @@ class BlogApiController extends Controller
 
         return 204;
     }
+
+    public function deleteAll()
+    {
+        Post::truncate();
+    }
 }

@@ -56,5 +56,5 @@ Route::get('posts/{id}', 'BlogApiController@show');
 Route::post('posts', 'BlogApiController@store');
 Route::put('posts/{id}', 'BlogApiController@update');
 Route::delete('posts/{id}', 'BlogApiController@delete');
-Route::delete('posts', 'BlogApiController@delete');
+Route::delete('posts', 'BlogApiController@deleteAll');
 
